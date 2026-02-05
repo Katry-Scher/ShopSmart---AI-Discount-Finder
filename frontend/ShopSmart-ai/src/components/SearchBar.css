@@ -1,0 +1,46 @@
+/* Mobile-first layout */
+.searchBar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.searchBar__input {
+  width: auto;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+
+.searchBar__button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #111827;
+  border-radius: 8px;
+  background: #111827;
+  color: white;
+  cursor: pointer;
+}
+
+/* Tablet and up: place input and button in a row */
+@media (min-width: 640px) {
+  .searchBar {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .searchBar__input {
+    flex: 1;
+  }
+
+  .searchBar__button {
+    width: auto;
+    padding-left: 18px;
+    padding-right: 18px;
+    white-space: nowrap;
+  }
+}
+
