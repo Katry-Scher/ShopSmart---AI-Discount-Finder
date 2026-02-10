@@ -13,9 +13,11 @@ function App() {
     setLoading(true);
     setResult(null);
 
+    const API_URL = import.meta.env.VITE_API_URL;
+
     try {
       const response = await fetch(
-        `http://localhost:3000/search?product=${encodeURIComponent(product)}`
+        `${API_URL}/search?product=${encodeURIComponent(product)}`
       );
 
       const data = await response.json();
