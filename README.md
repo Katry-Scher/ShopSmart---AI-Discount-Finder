@@ -4,6 +4,9 @@ ShopSmart AI is a full-stack demo application that helps users decide whether to
 
 The project was built to demonstrate a **real-world architecture** using React, Node.js, and Python, with clear separation of concerns and service-to-service communication.
 
+[iPhone-14-Plus-localhost-1dsxu_6ntxq_mb.webm](https://github.com/user-attachments/assets/5eb147a6-74f7-4eae-9fb7-9a2d9908083a)
+
+
 ---
 
 ## 🚀 Features
