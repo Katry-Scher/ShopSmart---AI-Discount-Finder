@@ -1,5 +1,7 @@
 const { getPriceHistory } = require("../data/priceHistory");
 
+const ML_URL = process.env.ML_URL || "http://localhost:5000";
+
 async function searchProduct(product) {
   const prices = getPriceHistory(product);
 
@@ -7,7 +9,7 @@ async function searchProduct(product) {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ prices }),
-});
+  });
 
   if (!response.ok) {
     const errorText = await response.text();
@@ -26,3 +28,4 @@ async function searchProduct(product) {
 }
 
 module.exports = { searchProduct };
+
